@@ -1373,7 +1373,18 @@ body{
 }
 
 }
-
+@media (max-width: 768px) {
+    .video-slide {
+        pointer-events: none;
+    }        /* Optional: Stelle sicher, dass das Video hinter den anderen Elementen liegt */.video-slide {
+        z-index: -1;
+    }
+    
+    /* Stelle sicher, dass der Inhalt darüber sichtbar bleibt */.home__container {
+        position: relative;
+        z-index: 1;
+    }
+}
 /* For large devices */
 
 @media screen and (min-width: 1024px){
